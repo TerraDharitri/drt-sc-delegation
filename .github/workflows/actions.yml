@@ -13,7 +13,7 @@ permissions:
 jobs:
   contracts:
     name: Contracts
-    uses: TerraDharitri/drt-sc-actions/.github/workflows/contracts.yml@v0.0.1
+    uses: TerraDharitri/drt-sc-actions/.github/workflows/contracts.yml@v0.0.2
     with:
       rust-toolchain: stable
       drt-go-scenario-version: v0.0.2-4
