@@ -36,6 +36,63 @@ where
 }
 
 #[rustfmt::skip]
+impl<Env, From, Gas> DelegationFullProxyMethods<Env, From, (), Gas>
+where
+    Env: TxEnv,
+    Env::Api: VMApi,
+    From: TxFrom<Env>,
+    Gas: TxGas<Env>,
+{
+    /// This is the contract constructor, called only once when the contract is deployed. 
+    pub fn init<
+        Arg0: ProxyArg<ManagedAddress<Env::Api>>,
+        Arg1: ProxyArg<usize>,
+        Arg2: ProxyArg<usize>,
+        Arg3: ProxyArg<u64>,
+        Arg4: ProxyArg<BigUint<Env::Api>>,
+        Arg5: ProxyArg<BigUint<Env::Api>>,
+    >(
+        self,
+        auction_contract_addr: Arg0,
+        service_fee_per_10000: Arg1,
+        owner_min_stake_share_per_10000: Arg2,
+        n_blocks_before_unbond: Arg3,
+        minimum_stake: Arg4,
+        total_delegation_cap: Arg5,
+    ) -> TxTypedDeploy<Env, From, NotPayable, Gas, ()> {
+        self.wrapped_tx
+            .payment(NotPayable)
+            .raw_deploy()
+            .argument(&auction_contract_addr)
+            .argument(&service_fee_per_10000)
+            .argument(&owner_min_stake_share_per_10000)
+            .argument(&n_blocks_before_unbond)
+            .argument(&minimum_stake)
+            .argument(&total_delegation_cap)
+            .original_result()
+    }
+}
+
+#[rustfmt::skip]
+impl<Env, From, To, Gas> DelegationFullProxyMethods<Env, From, To, Gas>
+where
+    Env: TxEnv,
+    Env::Api: VMApi,
+    From: TxFrom<Env>,
+    To: TxTo<Env>,
+    Gas: TxGas<Env>,
+{
+    pub fn upgrade(
+        self,
+    ) -> TxTypedUpgrade<Env, From, To, NotPayable, Gas, ()> {
+        self.wrapped_tx
+            .payment(NotPayable)
+            .raw_upgrade()
+            .original_result()
+    }
+}
+
+#[rustfmt::skip]
 impl<Env, From, To, Gas> DelegationFullProxyMethods<Env, From, To, Gas>
 where
     Env: TxEnv,

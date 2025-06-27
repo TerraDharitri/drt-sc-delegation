@@ -1,4 +1,5 @@
+[settings]
+main = "auction-mock"
 
-[[proxy]]
-path = "interactor/src/proxy.rs"
- 
+[contracts.auction-mock]
+allocator = "leaking"

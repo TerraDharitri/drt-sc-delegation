@@ -13,42 +13,10 @@
         },
         "framework": {
             "name": "dharitri-sc",
-            "version": "1.0.16"
+            "version": "1.16.0"
         }
     },
     "name": "DelegationFull",
-    "constructor": {
-        "docs": [
-            "This is the contract constructor, called only once when the contract is deployed."
-        ],
-        "inputs": [
-            {
-                "name": "auction_contract_addr",
-                "type": "Address"
-            },
-            {
-                "name": "service_fee_per_10000",
-                "type": "u32"
-            },
-            {
-                "name": "owner_min_stake_share_per_10000",
-                "type": "u32"
-            },
-            {
-                "name": "n_blocks_before_unbond",
-                "type": "u64"
-            },
-            {
-                "name": "minimum_stake",
-                "type": "BigUint"
-            },
-            {
-                "name": "total_delegation_cap",
-                "type": "BigUint"
-            }
-        ],
-        "outputs": []
-    },
     "upgradeConstructor": {
         "inputs": [],
         "outputs": []

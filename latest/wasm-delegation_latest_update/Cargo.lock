@@ -9,22 +9,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
 
 [[package]]
-name = "auction-mock"
-version = "0.3.4"
-dependencies = [
- "dharitri-sc",
- "node-storage",
-]
-
-[[package]]
-name = "auction-mock-wasm"
-version = "0.0.0"
-dependencies = [
- "auction-mock",
- "dharitri-sc-wasm-adapter",
-]
-
-[[package]]
 name = "autocfg"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -35,6 +19,24 @@ name = "bitflags"
 version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
+
+[[package]]
+name = "delegation_latest"
+version = "0.5.8"
+dependencies = [
+ "dharitri-sc",
+ "dharitri-sc-modules",
+ "node-storage",
+ "user-fund-storage",
+]
+
+[[package]]
+name = "delegation_latest_update-wasm"
+version = "0.0.0"
+dependencies = [
+ "delegation_latest",
+ "dharitri-sc-wasm-adapter",
+]
 
 [[package]]
 name = "dharitri-chain-core"
@@ -95,6 +97,15 @@ dependencies = [
  "quote",
  "radix_trie",
  "syn",
+]
+
+[[package]]
+name = "dharitri-sc-modules"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43e2c69c8ec91e84dbea7b61a36f745ee453ca3a6dc5b2c7e83004ad0b903cd8"
+dependencies = [
+ "dharitri-sc",
 ]
 
 [[package]]
@@ -205,3 +216,10 @@ name = "unwrap-infallible"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "151ac09978d3c2862c4e39b557f4eceee2cc72150bc4cb4f16abf061b6e381fb"
+
+[[package]]
+name = "user-fund-storage"
+version = "0.5.8"
+dependencies = [
+ "dharitri-sc",
+]
