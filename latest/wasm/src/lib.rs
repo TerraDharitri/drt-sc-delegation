@@ -5,9 +5,10 @@
 ////////////////////////////////////////////////////
 
 // Init:                                 1
+// Upgrade:                              1
 // Endpoints:                           79
 // Async Callback:                       1
-// Total number of exported functions:  81
+// Total number of exported functions:  82
 
 #![no_std]
 
@@ -18,6 +19,7 @@ dharitri_sc_wasm_adapter::endpoints! {
     delegation_latest
     (
         init => init
+        upgrade => upgrade
         version => version
         getNumNodes => num_nodes
         getNodeId => get_node_id

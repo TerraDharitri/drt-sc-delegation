@@ -5,7 +5,7 @@
 # ##########################################
 
 [package]
-name = "delegation_latest_full-wasm"
+name = "delegation_latest-wasm"
 version = "0.0.0"
 edition = "2021"
 publish = false
@@ -28,7 +28,7 @@ panic = "abort"
 path = ".."
 
 [dependencies.dharitri-sc-wasm-adapter]
-version = "=1.0.1"
+version = "=1.16.0"
 
 [workspace]
 members = ["."]

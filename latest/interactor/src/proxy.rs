@@ -222,7 +222,7 @@ where
     >(
         self,
         id: Arg0,
-    ) -> TxTypedCall<Env, From, To, NotPayable, Gas, user_fund_storage::types::FundItem<Env::Api>> {
+    ) -> TxTypedCall<Env, From, To, NotPayable, Gas, user_fund_storage::types::fund_item::FundItem<Env::Api>> {
         self.wrapped_tx
             .payment(NotPayable)
             .raw_call("fundById")

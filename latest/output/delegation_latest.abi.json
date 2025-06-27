@@ -1,11 +1,11 @@
 {
     "buildInfo": {
         "rustc": {
-            "version": "1.83.0",
-            "commitHash": "90b35a6239c3d8bdabc530a6a0816f7ff89a0aaf",
-            "commitDate": "2024-11-26",
+            "version": "1.85.0",
+            "commitHash": "4d91de4e48198da2e33413efdcd9cd2cc0c46688",
+            "commitDate": "2025-02-17",
             "channel": "Stable",
-            "short": "rustc 1.83.0 (90b35a623 2024-11-26)"
+            "short": "rustc 1.85.0 (4d91de4e4 2025-02-17)"
         },
         "contractCrate": {
             "name": "delegation_latest",
@@ -13,10 +13,42 @@
         },
         "framework": {
             "name": "dharitri-sc",
-            "version": "1.0.1"
+            "version": "1.0.16"
         }
     },
     "name": "DelegationFull",
+    "constructor": {
+        "docs": [
+            "This is the contract constructor, called only once when the contract is deployed."
+        ],
+        "inputs": [
+            {
+                "name": "auction_contract_addr",
+                "type": "Address"
+            },
+            {
+                "name": "service_fee_per_10000",
+                "type": "u32"
+            },
+            {
+                "name": "owner_min_stake_share_per_10000",
+                "type": "u32"
+            },
+            {
+                "name": "n_blocks_before_unbond",
+                "type": "u64"
+            },
+            {
+                "name": "minimum_stake",
+                "type": "BigUint"
+            },
+            {
+                "name": "total_delegation_cap",
+                "type": "BigUint"
+            }
+        ],
+        "outputs": []
+    },
     "upgradeConstructor": {
         "inputs": [],
         "outputs": []

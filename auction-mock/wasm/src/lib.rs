@@ -11,7 +11,7 @@
 
 #![no_std]
 
-dharitri_sc_wasm_adapter::allocator!(leaking);
+dharitri_sc_wasm_adapter::allocator!();
 dharitri_sc_wasm_adapter::panic_handler!();
 
 dharitri_sc_wasm_adapter::endpoints! {

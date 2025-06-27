@@ -31,7 +31,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "delegation_latest_full-wasm"
+name = "delegation_latest-wasm"
 version = "0.0.0"
 dependencies = [
  "delegation_latest",
@@ -40,7 +40,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-core"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4f7e914b76c699e352a9293ae0466e2a2fe9d15218082dc16aca3be02a5a99b"
 dependencies = [
@@ -50,7 +50,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3fb08f0c0fe90dfb235b0e2ed0679db7e92bba6438193df09cf1f9b0885fa15c"
 dependencies = [
@@ -65,7 +65,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4e2bfdd1f3e7d5156cc284daac3970aa4ba467ae0626d59dd769f304df4f177"
 dependencies = [
@@ -76,7 +76,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec-derive"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fdf28fd22fdd4a46bef814b8ed20d0f7b6914110b9b5fcfd7da5763fbafa2a1a"
 dependencies = [
@@ -88,7 +88,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e53837548aa8f7cb3a64b5e9e40d038bb879ac31d4d7dd98601a97fef2ef9dc"
 dependencies = [
@@ -101,7 +101,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "43e2c69c8ec91e84dbea7b61a36f745ee453ca3a6dc5b2c7e83004ad0b903cd8"
 dependencies = [
@@ -110,7 +110,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "1.0.1"
+version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "634cabce29f530e5ce6be5a3ed744deb99ddf7a729319f749cbdc27202835f38"
 dependencies = [
