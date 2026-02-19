@@ -1,11 +1,13 @@
 {
     "buildInfo": {
         "rustc": {
-            "version": "1.85.0",
-            "commitHash": "4d91de4e48198da2e33413efdcd9cd2cc0c46688",
-            "commitDate": "2025-02-17",
+            "version": "1.90.0",
+            "commitHash": "1159e78c4747b02ef996e55082b704c09b970588",
+            "commitDate": "2025-09-14",
             "channel": "Stable",
-            "short": "rustc 1.85.0 (4d91de4e4 2025-02-17)"
+            "host": "x86_64-unknown-linux-gnu",
+            "short": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+            "llvmVersion": "20.1"
         },
         "contractCrate": {
             "name": "auction-mock",
@@ -13,7 +15,7 @@
         },
         "framework": {
             "name": "dharitri-sc",
-            "version": "1.16.0"
+            "version": "2.0.0"
         }
     },
     "name": "AuctionMock",

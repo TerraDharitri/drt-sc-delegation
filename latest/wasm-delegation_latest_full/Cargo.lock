@@ -31,7 +31,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "delegation_latest_update-wasm"
+name = "delegation_latest_full-wasm"
 version = "0.0.0"
 dependencies = [
  "delegation_latest",

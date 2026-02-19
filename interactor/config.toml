@@ -1,0 +1,16 @@
+
+chain_type = 'real'
+gateway = 'https://gateway.dharitri.com'
+sc_address = "drt1qqqqqqqqqqqqqpgqxwakt2g7u9atsnr03gqcgmhcv38pt7mkd94q8vqld4"
+
+# chain_type = 'real'
+# gateway = 'https://devnet-gateway.dharitri.com'
+# sc_address = "drt1qqqqqqqqqqqqqpgq97wezxw6l7lgg7k9rxvycrz66vn92ksh2tssmj7a6l"
+
+# chain_type = 'real'
+# gateway = 'https://testnet-gateway.dharitri.com'
+# sc_address = "drt1qqqqqqqqqqqqqpgq97wezxw6l7lgg7k9rxvycrz66vn92ksh2tssmj7a6l"
+
+# chain_type = 'simulator'
+# gateway = 'http://localhost:8085'
+# sc_address = "drt1qqqqqqqqqqqqqpgqxwakt2g7u9atsnr03gqcgmhcv38pt7mkd94q8vqld4"

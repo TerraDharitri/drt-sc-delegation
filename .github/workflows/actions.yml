@@ -13,9 +13,9 @@ permissions:
 jobs:
   contracts:
     name: Contracts
-    uses: TerraDharitri/drt-sc-actions/.github/workflows/contracts.yml@v0.0.2
+    uses: dharitri/drt-sc-actions/.github/workflows/contracts.yml@v6.0.0
     with:
       rust-toolchain: stable
-      drt-go-scenario-version: v0.0.2-4
+      drt-go-scenario-version: v5.1.0
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

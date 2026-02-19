@@ -1,7 +1,7 @@
 [package]
 name = "delegation_latest"
-version = "0.5.8"
-authors = ["contact@dharitri.org"]
+version = "1.0.0"
+authors = ["Team Dharitri <contact@dharitri.org>"]
 edition = "2021"
 
 [lib]
@@ -14,13 +14,16 @@ path = "../node-storage"
 path = "../user-fund-storage"
 
 [dependencies.dharitri-sc-modules]
-version = "=1.16.0"
+# version = "=2.0.0"
+path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/contracts/modules"
 
 [dependencies.dharitri-sc]
-version = "=1.16.0"
+# version = "=2.0.0"
+path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/base"
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "=1.16.0"
+# version = "=2.0.0"
+path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/scenario"
 
 [dev-dependencies.auction-mock]
 path = "../auction-mock"
