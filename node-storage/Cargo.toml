@@ -1,11 +1,13 @@
 [package]
 name = "node-storage"
 version = "0.4.0"
-authors = ["contact@dharitri.org"]
+authors = ["Team Dharitri <contact@dharitri.org>"]
 edition = "2021"
 
 [dependencies.dharitri-sc]
-version = "=1.16.0"
+# version = "=2.0.0"
+path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/base"
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "=1.16.0"
+# version = "=2.0.0"
+path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/scenario"

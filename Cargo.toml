@@ -9,5 +9,18 @@ members = [
   "latest",
   "latest/meta",
 
-  "interact",
+  "interactor",
 ]
+
+
+[patch.crates-io]
+# " Tells cargo to use the local folders instead of internet."
+
+dharitri-sc = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/base" }
+dharitri-sc-meta = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/meta" }
+dharitri-sc-meta-lib = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/meta-lib" }
+dharitri-sc-modules = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/contracts/modules" }
+dharitri-sc-scenario = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/scenario" }
+dharitri-chain-vm = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/chain/vm" }
+dharitri-sc-snippets = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/snippets" }
+dharitri-sc-wasm-adapter = { path = "/home/dharitri/Downloads/drt-rs-sdk-2.0.0/framework/wasm-adapter" }

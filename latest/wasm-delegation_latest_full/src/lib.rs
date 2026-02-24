@@ -4,7 +4,7 @@
 ////////////////// AUTO-GENERATED //////////////////
 ////////////////////////////////////////////////////
 
-// Upgrade:                              1
+// Init:                                 1
 // Endpoints:                           81
 // Async Callback:                       1
 // Total number of exported functions:  83
@@ -17,7 +17,7 @@ dharitri_sc_wasm_adapter::panic_handler!();
 dharitri_sc_wasm_adapter::endpoints! {
     delegation_latest
     (
-        upgrade => upgrade
+        init => init
         version => version
         getNumNodes => num_nodes
         getNodeId => get_node_id
