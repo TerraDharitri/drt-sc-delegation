@@ -15,6 +15,6 @@ jobs:
     uses: TerraDharitri/drt-sc-actions/.github/workflows/contracts.yml@6f58cef408b010a78724c7941128310d2065adfa
     with:
       rust-toolchain: stable
-      drt-go-scenario-version: v5.1.0
+      drt-go-scenario-version: v0.0.5
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
